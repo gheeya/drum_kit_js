@@ -3,9 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
     <title>Drum Kit</title>
   </head>
   <body>
-    <h1>This is a drum kit</h1>
+    <div class="background"></div>
+    <div class="main">
+      <div class="drum-container">
+        <div class="drum" key="clap">
+          <span class="key-name">A</span>
+          <span class="key-sound">Clap</span>
+        </div>
+        <div class="drum" key="hihat">
+          <span class="key-name">S</span>
+          <span class="key-sound">HiHat</span>
+        </div>
+        <div class="drum" key="kick">
+          <span class="key-name">D</span>
+          <span class="key-sound">Kick</span>
+        </div>
+        <div class="drum" key="openhat">
+          <span class="key-name">F</span>
+          <span class="key-sound">Openhat</span>
+        </div>
+        <div class="drum" key="boom">
+          <span class="key-name">G</span>
+          <span class="key-sound">Boom</span>
+        </div>
+        <div class="drum" key="ride">
+          <span class="key-name">H</span>
+          <span class="key-sound">Ride</span>
+        </div>
+        <div class="drum" key="snare">
+          <span class="key-name">J</span>
+          <span class="key-sound">Snare</span>
+        </div>
+        <div class="drum" key="tom">
+          <span class="key-name">K</span>
+          <span class="key-sound">Tom</span>
+        </div>
+        <div class="drum" key="tink">
+          <span class="key-name">L</span>
+          <span class="key-sound">Tink</span>
+        </div>
+      </div>
+      <audio src="./tracks/clap.wav" class="drum-audio"></audio>
+      <audio src="./tracks/hihat.wav" class="drum-audio"></audio>
+      <audio src="./tracks/kick.wav" class="drum-audio"></audio>
+      <audio src="./tracks/openhat.wav" class="drum-audio"></audio>
+      <audio src="./tracks/boom.wav" class="drum-audio"></audio>
+      <audio src="./tracks/ride.wav" class="drum-audio"></audio>
+      <audio src="./tracks/snare.wav" class="drum-audio"></audio>
+      <audio src="./tracks/tom.wav" class="drum-audio"></audio>
+      <audio src="./tracks/tink.wav" class="drum-audio"></audio>
+    </div>
   </body>
 </html>
